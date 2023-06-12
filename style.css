@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cardo", serif, "Outfit", sans-serif;
+  /* font-family: "Outfit", sans-serif; */
+}
+
+:root {
+  --brand-color: #298299;
+  --primary-gray: #363636;
+  --secondary-gray: #707070;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.hero-image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero-content {
+  color: var(--brand-color);
+  font-size: 2rem;
+}
+
+.hero-content > h2 {
+  color: white;
+  font-size: 5rem;
+  font-style: italic;
+}
+/* -------------- */ /* -------------- */ /* -------------- */
+/* Intro */
+/* -------------- */ /* -------------- */ /* -------------- */
+
+/* main{
+        padding: 2rem;
+    } */
+
+/* -------------- */ /* -------------- */ /* -------------- */
+/* Intro */
+/* -------------- */ /* -------------- */ /* -------------- */
+#intro {
+  height: 80vh;
+  width: 100vw;
+}
+
+#intro > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px gray;
+  transition: 1s;
+}
+
+#intro > img:hover {
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--brand-color);
+  margin: 3rem 2rem 2rem;
+}
+
+#intro > p {
+  font-size: 1.4rem;
+  max-width: 350px;
+  width: 60vw;
+  color: var(--primary-gray);
+  text-align: center;
+}
+
+.s-normal {
+  font-size: 2rem;
+}
+
+/* -------------- */ /* -------------- */ /* -------------- */
+/* Skills */
+/* -------------- */ /* -------------- */ /* -------------- */
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  margin: 3rem 15% 7rem;
+  padding: 2rem;
+  box-shadow: 0 2px 5px gray;
+  border-radius: 1rem;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: red; */
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.1px solid rgba(225, 225, 225, 0.7);
+  transition: 0.2s;
+}
+
+.skill-box:hover {
+  box-shadow: 0 2px 5px gray;
+  transition: 0.2s;
+}
+
+.skill-box > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 70%;
+  box-shadow: 0 2px 2px gray;
+}
+
+.skill-box > h3 {
+  margin: 2rem 0 1rem 0;
+  color: var(--primary-gray);
+}
+
+.skill-box > p,
+.project-box > div > p {
+  color: var(--secondary-gray);
+}
+
+/* -------------- */ /* -------------- */ /* -------------- */
+/* Projects */
+/* -------------- */ /* -------------- */ /* -------------- */
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;  
+  transition: 0.2s;
+  border-radius: 1rem;
+  border: 0.1px solid rgba(225, 225, 225, 0.7);
+  gap: 0.2rem;
+  overflow: hidden;
+}
+
+.project-box:hover {
+  box-shadow: 0 2px 5px gray;
+  transition: 0.2s;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+  }
+
+
+.project-box > a  > div> div {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.project-box > a > div >  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 1px 1px gray;
+    transition: 0.5s all ease-in-out;
+    flex-shrink: 1;
+  }
+
+  .project-box > a{
+    text-decoration: none;
+    color: var(--secondary-gray);
+  }
+
+.project-box > a > div > div > h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-gray);
+}
+
+/* -------------- */ /* -------------- */ /* -------------- */
+/* Contact */
+/* -------------- */ /* -------------- */ /* -------------- */
+#contact > p {
+  margin: 3rem 0 6rem;
+  font-size: 1.4rem;
+  text-align: center;
+  max-width: 500px;
+  color: var(--primary-gray);
+  width: 80vw;
+}
+
+#contact > button {
+  padding: 0.7rem;
+  font-size: 1.4rem;
+  border-radius: 0.7rem;
+  border: 0;
+  /* background-color: var(--brand-color); */
+  margin-bottom: 15vh;
+  position: relative;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#contact > button::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.7rem;
+  background-color: var(--brand-color);
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+#contact button > a {
+  text-decoration: none;
+  color: var(--primary-gray);
+  z-index: 10;
+  gap: 0.5rem;
+  font-weight: 700;
+  
+}
+
+#contact button:hover::before {
+  width: 100%;
+  height: 100%;
+  color: white;
+  box-shadow: 0 2px 5px gray;
+  transition: 0.5s;
+}
+
+#contact button:hover a > img{
+  transition: 1s;
+  visibility: visible;
+  
+}
+
+#contact button:hover a {
+  color: white;
+  transition: 0.2s  ease-in-out;
+
+}
+
+#contact button > a > img{
+  height: 1.7rem; 
+  visibility:hidden;
+  /* transition: 0.5s; */
+}
+
+/* -------------- */ /* -------------- */ /* -------------- */
+/* Footer */
+/* -------------- */ /* -------------- */ /* -------------- */
+
+footer {
+  background-color: var(--brand-color);
+  padding: 1.5rem 0 2rem;
+}
+
+footer a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+footer small {
+  color: white;
+  margin-top: 1rem;
+}
+
+/* -------------- */
+/* ----- Media Query ----- */
+/* -------------- */
+
+@media (max-width: 992px) {
+  .hero-content > h2 {
+    font-size: 4rem;
+  }
+
+  .hero-content {
+    font-size: 1.7rem;
+    color: white;
+  }
+
+  .skill-container {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    margin: 3rem 10% 7rem;
+  }
+
+  .skill-box,
+  .project-box {
+    border: 0.1px solid rgba(225, 225, 225, 1);
+  }
+
+  .project-box > img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact > button {
+    background-color: var(--brand-color);
+    z-index: 10;
+  }
+
+  #contact button > a > img{
+    visibility: visible;
+  }
+
+  #contact button > a {
+    color: white;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content > h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .skill-container {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    margin: 3rem 5% 7rem;
+  }
+
+  #contact > p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    /* font-size: 1rem; */
+  }
+}
