@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,6 +23,13 @@
         <div class="hero-content">
             <h2>I'm Abdul Hamid</h2>
             <h3>A Programmer</h3>
+
+            <!-- <button class="download-cv"><a href="/" download="Abdul Hamid khatri.pdf">Download CV</a></button> -->
+            <!-- <button class="download-cv" onclick="download()">Download CV</button> -->
+
+            <form method="get" action="Abdul Hamid khatri.pdf" target="_blank">
+                <button class="download-cv" type="submit">Download!</button>
+             </form>
         </div>
 
     </header>
@@ -32,6 +40,7 @@
             <h2 class="section-title s-normal">Hello</h2>
             <p>I am a Web Developer and UI/UX
                 Designer</p>
+
         </section>
 
         <section id="skills" class="flex-center">
@@ -65,11 +74,11 @@
         <section id="Projects" class="flex-center">
             <h2 class="section-title">My Work</h2>
             <div class="skill-container" style="padding: 0;">
-                <div class="project-box"><a href="" target="_blank">
+                <div class="project-box"><a href="https://abdul-hamid-k.github.io/healthySalad/" target="_blank">
                         <div>
-                            <img src="./assets/Videos/dice.gif" alt="Dice Roll website">
+                            <img src="./assets/images/Healthy Salad web cover.png" alt="Salad">
                             <div>
-                                <h3>Dice Roll</h3>
+                                <h3>Healthy Salad Website</h3>
                                 <p>It is a simple and easy dice game played between two players. where dice range from 1
                                     to
                                     6 and new values every time page refreshes. </p>
@@ -114,6 +123,11 @@
         <small>@2023 Abdul Hamid</small>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
